@@ -1,0 +1,6 @@
+DATABASE_URL = "postgresql://postgres:225366373g@localhost:5432/gpb_labs"
+SECRET_KEY = "gpb-labs-secret-key"
+MINIO_ENDPOINT = "localhost:9000"
+MINIO_ACCESS_KEY = "GabrielPedreros"
+MINIO_SECRET_KEY = "225366373gpb"
+MINIO_BUCKET = "gpb-files"

@@ -1,0 +1,23 @@
+<form id="loginForm">
+    <input type="email" id="email" placeholder="Email" />
+    <input type="password" id="password" placeholder="Password" />
+    <button type="submit">Entrar</button>
+</form>
+
+<script type="module">
+    import { login } from "./js/auth.js";
+
+    document.getElementById("loginForm").addEventListener("submit", async e => {
+        e.preventDefault();
+
+        const email = email.value;
+        const password = password.value;
+
+        try {
+            const data = await login(email, password);
+            console.log("Rol:", data.role);
+        } catch {
+            alert("Credenciales inválidas");
+        }
+    });
+</script>
